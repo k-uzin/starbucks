@@ -126,11 +126,11 @@ function random(min, max) {
   // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
   return parseFloat((Math.random() * (max - min) + min).toFixed(2))
 }
-floationgObject('.floating1', 1, 15);
-floationgObject('.floating2', .5, 15);
-floationgObject('.floating3', 1.5, 20);
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating2', .5, 15);
+floatingObject('.floating3', 1.5, 20);
              // = selector, delay, size
-function floationgObject(selector, delay, size){ 
+function floatingObject(selector, delay, size){ 
 //밑의 옵션에서 사용할 매개변수들 - 선택자, 지연시간, 애니메이션 이동범위
   gsap.to(selector, random(1.5, 2.5), { //애니메이션 시간 1.5초~2.5초 랜덤
   // gsap.to(요소, 애니메이션 시간, 옵션);
